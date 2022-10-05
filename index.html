@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dashain website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+	<!----Top Section start---->
+
+	<div class="Top">
+		<nav>
+			<h2 class="logo">Dash<span>ain</span></h2>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Dashain</a></li>
+				<li><a href="#share">Share Something</a></li>
+			</ul>
+			<a href="#shop" class="btn">Shop now</a>
+		</nav>
+
+		<div class="images" id="home">
+
+			<div class="card">
+
+				<div class="towrite">
+					<h1>Happy Dashain <br><span>to all</span></h1>
+					<div class="wrapper">
+						<div class="static-txt">May this Dashain bring you</div>
+						<ul class="dynamic-txts">
+							<li><span>all happiness.</span></li>
+							<li><span>good health.</span></li>
+							<li><span>lots of joy.</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<img src="img/badaDashain.gif">
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about" id="about">
+		<div class="main">
+			<img src="img/manwithTika.gif">
+			<div class="about-text">
+				<h2>About Dashain</h2>
+				<p>This is the longest Hindu festival in Nepal, traditionally celebrated for two weeks with prayers and
+					offerings to Durga, the Universal Mother Goddess. The great harvest festival of Nepal, Dashain is a
+					time for family reunions, exchange of gifts and blessings, and elaborate pujas. Dashain honors the
+					Goddess Durga, who was created out of the shakti or energy of all the gods, armed with weapons from
+					each of them.</p>
+
+				<button type="button">Show More</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----shop section start----------->
+	<div class="shop" id="shop">
+		<div class="title">
+			<h2>Shop Now</h2>
+			<p>Get (<del>25%</del>) 50% off in any item on occasion of Dashain. Hurry up offer is limited!!</p>
+		</div>
+
+		<div class="box">
+
+			<div class="cards">
+				<article class="card__item">
+					<div class="card__img">
+						<img src="img/kite.jpg" alt="Gift Icon" class="card__icon" style="margin-top: -2rem;" />
+					</div>
+					<div class="card__info">
+						<h2 class="card__title" style="margin-top: 0;">Kite</h2>
+						<p class="card-description"><del>Price : Rs.500</del></p>
+					</div>
+					<div class="product__info">
+						<span class="product__price"> offer : Rs 250</span>
+						<a href="#" class="card__btn" onclick="generateAlert()">Add to Cart</a>
+					</div>
+				</article>
+
+				<article class="card__item">
+					<div class="card__img">
+						<img src="img/a.png" alt="Gift Icon" class="card__icon" />
+					</div>
+					<div class="card__info">
+						<h2 class="card__title">Vegitables</h2>
+						<p class="card-description"><del>Price : 400</del></p>
+					</div>
+					<div class="product__info">
+						<span class="product__price">OFFER : Rs 200</span>
+						<a href="#" class="card__btn" onclick="generateAlert()">Add to Cart</a>
+					</div>
+				</article>
+
+				<article class="card__item">
+					<div class="card__img">
+						<img src="img/massu.png" alt="Gift Icon" class="card__icon" style="margin-top:5rem;" />
+					</div>
+					<div class="card__info">
+						<h2 class="card__title" style="margin-top: 5rem;">Meat</h2>
+						<p class="card-description"><del>Price : 600</del></p>
+					</div>
+					<div class="product__info">
+						<span class="product__price">OFFER : Rs 300</span>
+						<a href="#" class="card__btn" onclick="generateAlert()">Add to Cart</a>
+					</div>
+				</article>
+			</div>
+		</div>
+
+		<p class="seemore">See more items <i class='fas fa-angle-down'></i>
+		</p>
+
+		<hr>
+	</div>
+
+	<!------footer start--------->
+	<footer id="share">
+		<p>Share memories...</p>
+		<p>Share your memories or your experiences regarding Dashain to social media like:</p>
+		<div class="social">
+			<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+		<p class="end">CopyRight By Shishir Bhusal</p>
+	</footer>
+</body>
+
+<script>
+	const generateAlert = () => {
+		alert("Successfully, Added to cart!!")
+	}
+</script>
+
+</html>
